@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fictional tuition centre homepage built as a beginner web development exercise.">
+  <title>Karghil Learning Centre | Practice Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="notice">Portfolio demonstration &middot; Fictional business</p>
+    <!-- HTML describes the content and structure of the page. -->
+    <h1>Karghil Learning Centre</h1>
+    <p>Find the right support for your child's learning.</p>
+    <p>Explore our example subjects and learning approach.</p>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="button" href="#classes">Explore classes</a>
+      <a class="button" href="#about">About us</a>
+    </nav>
+
+    <section id="classes" aria-labelledby="classes-heading">
+      <h2 id="classes-heading">Example classes</h2>
+      <ul>
+        <li>Mathematics &mdash; practise concepts step by step.</li>
+        <li>Science &mdash; explore ideas through everyday examples.</li>
+        <li>English &mdash; build reading and writing confidence.</li>
+      </ul>
+      <p>This is a practice website. No classes or enrolments are offered.</p>
+    </section>
+
+    <section id="enquiry" aria-labelledby="enquiry-heading">
+      <h2 id="enquiry-heading">Make an enquiry</h2>
+      <p class="notice">Demo only. Nothing is sent or saved.</p>
+      <form class="enquiry-form" id="enquiry-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button class="button" type="submit">Test enquiry</button>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+  <h2 id="about-heading">About Our Learning Centre</h2>
+  <p>
+    We help students understand mathematics, science,
+    and English through clear explanations and practice.
+  </p>
+  <p>This fictional centre is part of my portfolio project.</p>
+</section>
+<section id="faq" aria-labelledby="faq-heading">
+  <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+  <details>
+    <summary>Which subjects are shown?</summary>
+    <p>Our example classes cover mathematics, science, and English.</p>
+  </details>
+
+  <details>
+    <summary>Can I enrol in a class?</summary>
+    <p>
+      No. This is a fictional learning centre created
+      as a portfolio project.
+    </p>
+  </details>
+</section>
+    <footer>Created by Karghil &middot; Portfolio practice project</footer>
+  </main>
+</body>
+</html>
